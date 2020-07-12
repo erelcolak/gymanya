@@ -1,0 +1,624 @@
+/*	Site Kodlamasý
+	Erel Çolak
+	(Powered by Bootstrap)
+	(Bootstrap Developed by erelcolak.com)
+	erelcolak.com
+	pixarel.com
+	
+*/
+
+/*###### TEMEL HTML YAPILARI ######*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=latin,latin-ext);
+body{
+background-color:#f5f5f5;
+font-family: 'Ubuntu',sans-serif;
+font-size:16px;
+}
+h1, h2, h3,h4,h5,h6 {
+font-weight:400;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+h1{font-size:36px;}
+h2{font-size:32px;}
+h3{font-size:24px;}
+h4{font-size:18px;}
+h5{font-size:14px;}
+h6{font-size:11px;}
+p{margin:10px 0px;}
+
+a > h4{color:#434a54;}
+/*###### BOOTSTRAP ÖZELLÝKLERÝ ######*/
+
+/*BTN Genel*/
+.btn{padding: 5px;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;}
+
+/*BTN Flat Radius Olmadan*/
+.btn-flat{padding: 5px;-webkit-border-radius:0px !important;-moz-border-radius: 0px !important;border-radius:0px !important;}
+
+/*BTN Default*/
+.btn-default {color: #434a54;border-color: #e0e2e5 !important;}
+.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active{background-color: #323c42;border-color: #323c42 !important;}
+.btn-default,.btn-default.disabled,.btn-default[disabled]{background-color: #e0e2e5;}
+.open.dropdown-toggle.btn-default{background-color: #ccd1d9;border-color: #ccd1d9;}
+
+/*BTN Filtre*/
+.btn-filtre{color: #434a54;font-weight:300;min-width:150px;border:none !important;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}
+.btn-filtre:hover,.btn-filtre:focus,.btn-filtre:active,.btn-filtre.active{color:#434a54;background-color: #f5f5f5;border:none !important;}
+.btn-filtre,.btn-filtre.disabled,.btn-default[disabled]{background-color: #fff;}
+.open.dropdown-toggle.btn-filtre{background-color: #ccd1d9;border-color: #ccd1d9;}
+
+/*BTN Hafta Linkleri*/
+.btn-hafta-linkleri{color: #434a54;font-weight:300;min-width:150px;border:none !important;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}
+.btn-hafta-linkleri:hover,.btn-hafta-linkleri:focus,.btn-hafta-linkleri:active,.btn-hafta-linkleri.active{color:#434a54;background-color: #f5f5f5;border:none !important;}
+.btn-hafta-linkleri,.btn-hafta-linkleri.disabled,.btn-default[disabled]{background-color: #fff;}
+.open.dropdown-toggle.btn-hafta-linkleri{background-color: #ccd1d9;border-color: #ccd1d9;}
+
+/*BTN Beyaz*/
+.btn-beyaz {color: #434a54;border-color: #fff !important;}
+.btn-beyaz:hover,.btn-beyaz:focus,.btn-beyaz:active,.btn-beyaz.active{color:#434a54;background-color: #fff;border-color: #fff !important;}
+.btn-beyaz,.btn-beyaz.disabled,.btn-beyaz[disabled]{background-color: #fff;}
+.open.dropdown-toggle.btn-beyaz{background-color: #fff;border-color: #fff;}
+
+/*BTN seffaf*/
+.btn-seffaf {color: #fff;border:2px solid #fff !important;}
+.btn-seffaf:hover,.btn-seffaf:focus,.btn-seffaf:active,.btn-seffaf.active{color:#434a54;background-color: transparent;border:2px solid #fff !important;}
+.btn-seffaf,.btn-seffaf.disabled,.btn-seffaf[disabled]{background-color: transparent;}
+.open.dropdown-toggle.btn-seffaf{background-color: transparent;border:2px solid #fff;}
+
+/*BTN sosyal*/
+.btn-sosyal {color: #fff;border:2px solid #fff !important;}
+.btn-sosyal:hover,.btn-sosyal:focus,.btn-sosyal:active,.btn-sosyal.active{color:#f5f5f5;background-color:#2f69c1;border:2px solid #fff !important;}
+.btn-sosyal,.btn-sosyal.disabled,.btn-sosyal[disabled]{background-color:#2556a0;}
+.open.dropdown-toggle.btn-sosyal{background-color:#2556a0;border:2px solid #fff;}
+
+/*Dropdown Menü*/
+.dropdown-menu {background-color: #fff; border:1px solid #e5e5e5;-webkit-box-shadow: none;box-shadow: none;}
+.dropdown-menu li a{color:#434a54;}
+
+/*FORM*/
+.form-control{font-size:13px;height:45px;border:1px solid #e5e5e5 !important;-webkit-border-radius: 0px !important;-moz-border-radius: 0px !important;border-radius: 0px; !important;}
+
+/*SELECT BOX - ÞEHÝR LÝSTESÝ FALAN*/
+.selecter {margin-top:3px;position: relative;z-index: 1;display: block;max-width: 100%;outline: 0;line-height: initial !important;}
+.selecter .selecter-selected{position: relative;z-index: 2;display: block;padding: 13px 10px;overflow: hidden;font-size: 13px;text-overflow: clip;cursor: pointer;background-color: #fff;border: 1px solid #e5e5e5;border-radius: 0px;-webkit-border-radius: 0px;-moz-border-radius: 0px;}
+.selecter .selecter-selected:after{position: absolute;top: 18px;right: 15px;width: 0;height: 0;content: "";border-top: 7px solid #cccccc;border-right: 7px solid transparent;border-left: 7px solid transparent;}
+
+/*PAGÝNATÝON*/
+.pagination > li > a {color:#; background-color:#f5f5f5;border-color:#f5f5f5; margin-right:5px; -webkit-border-radius: 20px !important;-moz-border-radius: 20px !important;border-radius: 20px !important;}
+.pagination > li:first-child > a{color: #fff;background-color: #3bafda;border-color: #3bafda;}
+
+/*FÝYAT TABLOSU*/
+.pricing .unit {min-width: 220px;margin-right: 20px;}
+.pricing .unit.active{}
+.pricing .unit.pasif{}
+.pricing .unit.pasif > div.price-title{}
+.pricing .unit.pasif > div.price-body{}
+.pricing .unit.pasif > div.price-foot{}
+.price-body{background-color:#fff !important;}
+.price-title{color:#434a54 !important;font-weight:700; !important;}
+.price-title h3 {color:#434a54;font-size:48px;font-weight:700; !important;}
+.price-foot{background-color:#f5f5f5 !important;}
+.pricing .price-primary .price-title{background-color:#e5e5e5;}
+.pricing .price-success .price-title{background-color:#3bafda;}
+
+/*###### SÝTE KODLAMASI BAÞLANGIÇ ######*/
+
+/*ARKAPLAN ÖZELLÝKLERÝ*/
+.arkaplan-beyaz{background-color:#f5f5f5 !important;}
+.arkaplan-mavi{background-color:#5d9cec !important;}
+.arkaplan-aqua{background-color:#3bafda !important;}
+.arkaplan-mint{background-color:#37bc9b !important;}
+.arkaplan-yesil{background-color:#8cc152 !important;}
+.arkaplan-sari{background-color:#f6bb42 !important;}
+.arkaplan-turuncu{background-color:#e9573f !important;}
+.arkaplan-kirmizi{background-color:#da4453 !important;}
+.arkaplan-mor{background-color:#967adc !important;}
+.arkaplan-pembe{background-color:#d770ad !important;}
+.arkaplan-fume{background-color:#aab2bd !important;}
+.arkaplan-gri{background-color:#434a54 !important;}
+.arkaplan-siyah{background-color:#2a2a2a !important;}
+
+/*YAZI RENKLERÝ*/
+.yazi_beyaz{color:#f5f7fa !important;}
+.yazi_kirmizi{color:#da4453 !important;}
+
+/*YAZI BÜYÜKLÜKLERÝ*/
+.yazi-72px{font-weight:700;font-size:72px !important;}
+.yazi-52px{font-weight:700;font-size:52px !important;}
+.yazi-28px{font-weight:400;font-size:28px !important;}
+.yazi-26px{font-weight:400;font-size:26px !important;}
+.yazi-20px{font-weight:400;font-size:20px !important;}
+.yazi-19px{font-weight:400;font-size:19px !important;}
+.yazi-17px{font-weight:400;font-size:17px !important;}
+.yazi-13px{font-weight:400;font-size:13px !important;}
+
+/*HÝZALAMA*/
+.yazi-ortali{text-align:center;}
+.yazi-yasla{text-align:justify;}
+.float-left{float:left;}
+.float-right{float:right;}
+.valign-center{}
+.border-bottom{border-bottom:1px solid #e5e5e5;}
+.clear{clear:both;}
+.divider{border-bottom:1px solid #e5e5e5;}
+
+/*------ ÇERÇEVELER VE CLEAR ------*/
+.cerceve1400{
+max-width:1400px;
+margin:0 auto;
+background-color:#e6e7e9;
+-webkit-box-shadow:0px 0px 10px 2px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:0px 0px 10px 2px rgba(50, 50, 50, 0.75);
+box-shadow:0px 0px 10px 2px rgba(50, 50, 50, 0.75);
+}
+.cerceve960{
+max-width:960px;
+margin:0 auto;
+}
+
+/*------ BUTON YAPI VE ÇEÞÝTLERÝ ------*/
+.btn-blok{width: 100%; margin-bottom:5px;margin-top:5px;}
+.btn-kucuk{font-size:11px !important;font-weight: 300!important;max-height: 24px;padding: 4px 5px;}
+
+/*------ FAVORÝ BUTONU ------*/
+
+
+/* ------ ÝÇERÝK ------*/
+.icerik{
+height:auto;
+width:auto;
+padding-left:15px;
+padding-right:15px;
+margin-bottom:15px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+background-color:#fff;
+}
+.icerik-saydam{
+height:auto;
+width:auto;
+padding-left:15px;
+padding-right:15px;
+margin-bottom:15px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+background-color:transparent;
+}
+.icerik-kosesiz{
+height:auto;
+width:auto;
+padding-left:15px;
+padding-right:15px;
+padding-bottom:15px;
+padding-top:15px;
+margin-bottom:15px;
+background-color:#fff;
+
+}
+.icerik-kosesiz-program-detay{
+height:auto;
+width:auto;
+padding-left:15px;
+padding-right:15px;
+padding-bottom:15px;
+padding-top:15px;
+background-color:transparent;
+}
+
+/*ÝÇERÝK BAÞLIK*/
+.icerik-baslik{
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+line-height:24px;
+padding:10px 15px;
+border-bottom:1px solid #e5e5e5;
+background-color:#f5f5f5;
+}
+
+/*ÝÇERÝK BAÞLIK SAYDAM*/
+.icerik-baslik-saydam{
+line-height:50px;
+padding:10px 15px;
+background-color:transparent;
+}
+
+/*ÝÇERÝK BAÞLIK ALT BAÞLIK*/
+.icerik-baslik-alt-baslik{
+color:#aab2bd;
+font-weight:300;
+font-size:17px;
+display:inline-block;
+margin-left:5px;
+}
+.icerik-baslik-alt-baslik-buyuk{
+color:#656d78;
+font-weight:400;
+font-size:20px;
+display:inline-block;
+margin-left:5px;
+}
+
+/*ÝÇERÝK YAZI*/
+.icerik-yazi{font-weight:300;font-size:15px;}
+
+/*SATIR*/
+.satir{line-height:50px;padding:10px 15px;border-bottom:1px solid #e5e5e5;}
+.satir-bordersiz-lh50{line-height:50px;padding:10px 15px;}
+.satir-bordersiz{line-height:24px;padding:10px 15px;}
+.satir-normal{line-height:18px;padding:10px 15px;}
+.satir-normal-border{line-height:18px;padding:10px 15px;border-bottom:1px solid #e5e5e5;}
+.satir-promo{line-height:16px;padding:15px 15px;}
+
+.satir-border{line-height:50px;padding:10px 15px;border-bottom:1px solid #e5e5e5;}
+.satir-icon{height:16px;width:16px;}
+.satir-icon img{height:16px;width:16px;margin-top:-2px;}
+.satir-baslik{font-size:14px;font-weight:700;}
+.satir-baslik-normal{font-weight:300;}
+.satir-baslik-diyet{font-size:17px;font-weight:300;}
+.satir-metin{font-size:13px;font-weight:300;}
+.satir-input{display:block;margin-top:3px;}
+
+/*BUTON*/
+.btn-icon{height:16px;width:16px;}
+.btn-icon img{height:16px;width:16px;margin-top:-4px;}
+.btn-metin{font-weight:700;}
+
+/*BÝLGÝ*/
+.bilgi{}
+.bilgi-icon{}
+.bilgi-icon img{}
+.bilgi-baslik{font-size:14px;font-weight:700;display:block;color:#3bafda;}
+.bilgi-metin{font-size:13px;font-weight:300;display:block;}
+
+/*UL LÝST CHECK*/
+.list-check{list-style-image:url('../img/icon/list-check.png');}
+.list-cross{list-style-image:url('../img/icon/list-cross.png');}
+
+/*SOL SÝDEBAR PROMOLARI VE BÝLGÝLENDÝRMELERÝ*/
+.sol-promo{color:#f5f5f5 !important;}
+.promo-icon{height:16px;width:16px;margin-right:10px;}
+.promo-icon img{height:16px;width:16px;margin-top:-2px;}
+.promo-baslik{border-bottom:1px solid #e5e5e5; font-weight:700;display:block;text-align:center;font-size:20px;margin-bottom:15px;padding-bottom:5px;}
+.promo-metin{font-weight:300;display:inline-block;}
+
+
+/*### SAYFALAR ###*/
+
+
+/*PROFÝL*/
+.profil-bilgileri{}
+.hesap-bilgileri{}
+.profil-resmi{padding-top:0px;padding-bottom:0px;}
+.profil-resmi img{max-height:220px;margin:0 auto;}
+.fiziki-bilgileriniz{}
+.istatistiki-bilgileriniz{}
+
+/*PROGRAMLAR*/
+.program{}
+.aktif-program{background-color:#f5f5f5;}
+.program-bilgileri{}
+.program-metin{font-weight:300;text-align:justify;min-height:110px;}
+.program-butonlar{}
+.program-kapak-gorseli{}
+.program-kapak-gorseli img{max-height:290px;margin:0 auto;}
+
+/*PROGRAMLAR DETAY*/
+.container-program-detay{}
+.program-detay-filtreler{}
+.program-detay{}
+.program-detay-kapak-gorseli{}
+.program-detay-kapak-gorseli img{}
+.program-detay-baslik{font-size:14px;color:#3bafda;<font-weight:300></font-weight:300>;}
+.program-detay-gun{font-weight:300;font-size:13px;color:#aab2bd;}
+.program-detay-tarih{font-weight:300;font-size:13px;color:#aab2bd;}
+.program-gunsecimi-filtre-adi{font-weight:300;margin-left:5px;line-height:30px;vertical-align:middle;}
+.programi-sec-butonlar{border-top:1px solid #e5e5e5;}
+
+/*FÝLTRELER*/
+.filtreler-listesi{}
+.filtre-grubu{}
+.filtre-grubu-ara{}
+.filtre-listesi{}
+.filtre{margin-left:5px;min-height:30px;}
+.filtre-adi{font-weight:300;margin-left:5px;line-height:30px;vertical-align:middle;}
+
+/*Filtre Dropdown Butonu*/
+.btn-group-filtre{}
+.btn-filtre-metin{float:left;margin-left:15px;}
+.btn-filtre-icon{float:right;margin-right:15px;}
+
+/*ANTRENMANLAR*/
+.antrenman-ust-butonlar{}
+.antrenmanlar-listesi{}
+.antrenman{}
+.antrenman-kapak-gorseli{}
+.antrenman-kapak-gorseli img{border-top-left-radius: 15px;border-top-right-radius: 15px;}
+.antrenman-bilgileri{padding-top:10px;padding-bottom:10px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+.antrenman-butonlar{}
+
+/*DERS*/
+.ders-video{}
+.ders-metin{font-weight:300;text-align:justify;}
+
+/*YORUMLAR*/
+.yorum-listesi{}
+.yorum{margin-top:5px;margin-bottom:5px;}
+.yorum-body{}
+.yorum-yapan-avatar{}
+.yorum-yapan-isim{color:#434a54;}
+.yorum-tarih{color:#aab2bd;font-size:13px;}
+.yorum-metin{text-align:justify;font-weight:300;font-size:14px;}
+.yorum-daha-fazla-goster{}
+.yorum-yap{margin-top:15px;margin-bottom:15px;}
+
+/*PROGRAMIM*/
+.programim-hafta-linkleri{}
+.programim-hafta-listesi{}
+.hafta-gecmis{}
+.hafta-simdi{}
+.hafta-gelecek{}
+.gun-gecmis{}
+.gun-simdi{}
+.gun-gelecek{}
+.programim-haftalik-istatistik{}
+
+/*GELÝÞÝM*/
+.gelisim-istatistikler{}
+.gelisim-baslik{}
+.gelisim-grafik-kilo{}
+.gelisim-program-gelisimi{}
+#vk-endeksi{}
+.vk-endeksi-bolum{min-height:168px;}
+
+/*ÜYELÝKTEN ÇIKIÞ*/
+.container-uyelikten-cikis{background-image:url('../img/sitegorselleri/uyelikten-cikis.jpg'); background-size:cover;background-repeat:no-repeat;background-position:top left;min-height:400px;}
+
+/*DÝYET*/
+.diyet-hafta-linkleri{}
+.diyet-hafta-listesi{}
+.diyet{}
+.diyet-kapak-gorseli{}
+.diyet-butonlar{}
+.diyet-sol-sidebar{}
+
+/*HEADER*/
+.container-fluid-header{background-color:#fff;min-height:100px;}
+.container-header{margin-top:25px;}
+.header{}
+.logo{}
+.logo img{display:block;height:50px;width:250px;margin-left:auto;margin-right:auto;}
+.header-kullanici-avatar{display:inline-block;}
+.header-kullanici-avatar img{height:32px;width:32px;display:inline-block;margin-left:auto;margin-right:auto;}
+.header-kullanici-menu{display:inline-block;}
+.header-kullanici-menu-giris{}
+
+/*ANA MENÜ*/
+.container-fluid-anamenu{background-color:#f5f5f5;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+.container-anamenu{}
+.navbar {position: relative;min-height: 50px;margin-top:0px;margin-bottom:0px;border:none !important;border-radius:0px;}
+.anamenu{}
+.nav-anamenu{background-color:#f5f5f5;}
+.anamenu-li a{height:50px;line-height:25px;}
+.btn-anamenu-icon{}
+.btn-anamenu-icon img{width:16px;height:16px;}
+.btn-anamenu-metin{color:#434a54;font-weight:700;font-size:14px;}
+
+/*KULLANICI ÖZET BÝLGÝ*/
+.container-fluid-kullanici-ozet-bilgi{background-color: #323c42;color: #f5f7fa !important;padding-top: 15px;padding-bottom: 15px;}
+.container-kullanici-ozet-bilgi{color:#;}
+.kullanici-ozet-bilgi-profil{}
+.kullanici-ozet-bilgi-avatar{}
+.kullanici-ozet-bilgi-avatar img{max-height: 36px;max-width: 36px;height:32px;width:32px;margin-left: auto;margin-right: auto;display: block;}
+.kullanici-ozet-bilgi-adsoyad{font-size: 24px;font-weight: 700;}
+
+/*UYARILAR*/
+.container-uyarilar{margin-bottom:15px;}
+.uyarilar{text-align:center;}
+.uyari{margin-bottom:0px !important;}
+
+/*FOOTER*/
+.container-fluid-footer{height:auto;background-color:#f8f6f8;background-image:url('../img/sitegorselleri/footer.jpg');background-repeat:no-repeat;background-position:bottom left;background-size:;}
+.container-footer{min-height:300px;padding-top:15px;padding-bottom:171px;}
+.footer-baslik{border-bottom:1px solid #e5e5e5;padding-bottom:15px;}
+.footer-ul{ list-style:none;margin:0px;padding:0px;}
+.footer-ul li{line-height:30px; height:30px;}
+.footer-ul li a{text-decoration:none;color:#aab2bd;font-size:;font-weight:700;}
+.footer-ul li a:hover{color:#ccd1d9;}
+.footer-sosyal-icon{width:24px;height:24px;margin-right:15px;}
+
+/*MODAL*/
+.modal-content{-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;}
+.modal-body{margin-top:15px;margin-bottom:15px;}
+.modal-butonlar{border-top:1px solid #e5e5e5;}
+
+/*MODALLAR*/
+.modal-program-sihirbazi{}
+.tabpanel-program-sihirbazi{}
+.nav-tabs-program-sihirbazi{}
+.li-program-sihirbazi{}
+.tab-content-program-sihirbazi{}
+
+
+.modal-kullanici-kayit{}
+.modal-kullanici-kayit-body{}
+.modal-kullanici-giris{}
+.modal-kullanici-giris-body{}
+.program-sihirbazi-anket-secenekler{border-bottom:1px solid #e5e5e5;padding-bottom:15px;}
+.program-sihirbazi-anket-secenekler-secenek-resmi{max-height:64px;}
+.modal-kilo-gir{}
+.modal-kilo-gir-body{}
+.modal-antrenmanlar-detay{}
+.modal-antrenmanlar-detay-body{}
+.modal-uye-kayit-bilgilendirme{}
+
+/*ÜYE KAYIT*/
+.container-fluid-uye-kayit{background-image:url('../img/sitegorselleri/uye-kayit.jpg');background-size:cover;}
+.uye-kayit-paketler{}
+.fiyat-tablosu{}
+
+/*ÞÝFREMÝ UNUTTUM*/
+.container-sifremi-unuttum{min-height:600px;background-image:url('../img/sitegorselleri/sifremi-unuttum.jpg');background-repeat:no-repeat;background-position:top left;background-size:cover;width:100%;height:100%;}
+.sifremi-unuttum-eposta{margin-bottom:15px;}
+
+/*404*/
+.container-404{min-height:600px;background-image:url('../img/sitegorselleri/404.jpg');background-repeat:no-repeat;background-position:top left;background-size:cover;width:100%;height:100%;}
+.btn-geridon-404{margin-top:75px;}
+
+/* ÝNDEX */
+
+/*slider*/
+.container-fluid-slider{position:relative;min-height:450px;}
+.img-slider{width:auto;min-height:450px;height:600px;background-image:url('../img/slider/slider01.jpg');background-position:top left;}
+.slider-login{position:absolute;top:5%;right:2%;background-color:#f4f4f4;opacity:.8;-transition: all .3s linear;-o-transition: all .3s linear;-moz-transition: all .3s linear;-webkit-transition: all .3s linear;}
+.slider-login:hover{opacity:1;}
+.slider-login-opak{margin-top:5%;margin-right:15px;margin-left:15px;background-color:rgba(255, 255, 255, 0.75);-transition: all .3s linear;-o-transition: all .3s linear;-moz-transition: all .3s linear;-webkit-transition: all .3s linear;}
+.slider-login-opak:hover{background-color:rgba(255, 255, 255, 1);}
+.slider-slogan{margin-top:16%;}
+.slider-slogan img{}
+
+/*markalar*/
+.container-fluid-markalar{background-color:#000;padding-top:15px;padding-bottom:15px;}
+.container-markalar{}
+.markalar{}
+.marka img{display:block;margin-left:auto;margin-right:auto;max-height:100px;}
+
+/*programlar*/
+.container-fluid-programlar{background-color:#fff;}
+.container-programlar{}
+.tabpanel-programlar{}
+.nav-tabs-programlar{margin-top:15px;background:transparent !important;}
+.li-programlar{border:none !important;padding-left: 25px;padding-right: 25px;}
+.li-programlar a{border-radius:25px !important;border: 1px solid #e5e5e5 !important;margin-right: 15px; !important}
+.li-programlar a:hover{background-color:#e5e5e5 !important;}
+.tab-content-programlar{;}
+
+/*eðitmenler*/
+.container-fluid-egitmenler{background-color:#ffffff;}
+.container-egitmenler{}
+.tabpanel-egitmenler{}
+.nav-tabs-egitmenler{background-color:#ffffff !important;}
+.li-egitmenler{}
+.li-egitmenler a{line-height:62px;height:62px;-transition: all .3s linear;-o-transition: all .3s linear;-moz-transition: all .3s linear;-webkit-transition: all .3s linear;}
+.li-egitmenler a:hover{background-color:#3bafda !important;}
+.tab-content-egitmenler{}
+.egitmenler-baslik{border-bottom:1px solid #e5e5e5;}
+.egitmenler-calisma-alanlari{color:#aab2bd;font-size:19px;}
+.egitmenler-metin{font-size:17px;text-align:justify;}
+
+/*sayaç*/
+.container-fluid-sayac{background-image:url('../img/sitegorselleri/sayac.jpg');}
+.container-sayac{}
+.tick{font-size:52px;color:#fff;border:1px solid #666464;margin-top:15px;background-color:rgba(0, 0, 0, 0.25);padding-top:15px;padding-bottom:15px;}
+.sayi-bolumu{background-color:rgba(0,0,0,0.25);padding-top:15px;padding-bottom:15px;}
+
+/*diyet*/
+.container-fluid-diyet{background-color:#fff;padding-top:50px;padding-bottom:50px;}
+
+/*programim*/
+.container-fluid-programim{background-color:#fff;padding-top:50px;padding-bottom:50px;}
+
+/*fiyat-bilgileri*/
+.container-fluid-fiyat-bilgileri{background-color:#fff; padding-top:15px;}
+
+/*ARKADAÞINI DAVET ET*/
+.container-fluid-arkadas-davet-et{margin-top:-15px;}
+.container-arkadas-davet-et{margin-top:15px;}
+
+/*STATÝK SAYFALAR*/
+/*satýþ sözleþmesi*/
+
+/*iletiþim*/
+.container-iletisim{margin-top:15px;}
+
+/*HABER BANDI*/
+.container-fluid-haberbandi{background-color:#da4453;}
+.container-haberbandi{padding-left:15px;color:#fff;line-height:50px;min-height:50px;font-weight:700;text-align:center;font-size:18px;}
+#newsList{}
+.news-item{}
+
+/*VÝDEO PLAYER STÝL KODLARI*/
+#video_kontrol_bolumu{
+	background-color:#333;
+	padding:10px;
+	color:#ccc;
+}
+#video_player_box{width:480px;margin:0 auto;}
+#volumeslider{}
+#seekslider{}
+input[type='range']::-webkit-slider-thumb{-webkit-appearance:none !important;background-color:#a6e22b;height:15px;width:15px;border-radius:100%;cursor:pointer;}
+input[type='range']{-webkit-appearance:none !important;background-color:#2a2a2a !important;border:1px solid #434a54;height:15px;border-radius:15px;vertical-align:middle;}
+button#playpausebtn{background-color:transparent;background-image:url('../img/videoplayer/oynat.png');border:none;width:32px;height:32px;cursor:pointer;display:inline-block;opacity:.90;vertical-align:middle;}
+button#playpausebtn:hover{opacity:1;}
+#seekslider{background:url('');display:inline-block;}
+#curtimetext{background:url('');display:inline-block;}
+#durtimetext{background:url('');display:inline-block;}
+#mutebtn{background:url('');display:inline-block;}
+#volumeslider{background:url('');display:inline-block;}
+#fullscreenbtn{background:url('');display:inline-block;border:none;vertical-align:middle;}
+
+/*VÝDEO ANKET*/
+.video-anket{}
+.video-anket-icon{}
+.video-anket-icon img{margin:0 auto !important;}
+
+/*GENEL ÝSTATÝSTÝKLER*/
+.container-genel-istatistikler{}
+
+
+
+
+
+
+/*ADMÝN*/
+.container-fluid-admin{}
+
+.icerik-admin{
+height:auto;
+width:auto;
+padding-left:15px;
+padding-right:15px;
+margin-top:15px;
+margin-bottom:15px;
+background-color:#464646;
+}
+.icerik-admin-beyaz{
+height:auto;
+width:auto;
+padding-left:15px;
+padding-right:15px;
+margin-top:15px;
+margin-bottom:15px;
+background-color:#fff;
+}
+/*header*/
+.admin-header{border-bottom:1px solid #e5e5e5;padding-top:15px;padding-bottom:15px;background-color:#fff;font-weight:300;}
+/*sol menü*/
+.admin-sol-menu{background-color:;}
+.admin-sol-menu-ul{list-style:none;margin:0;padding:0;}
+.admin-sol-menu-li-baslik{background:#3bafda;display:block;border-bottom:1px solid #414141;min-height:42px;line-height:42px;padding-left:15px;}
+.admin-sol-menu-li-baslik a{display:block;text-decoration:none;font-size:13px;color:#f5f5f5;}
+.admin-sol-menu-li-baslik img{margin-right:10px;height:16px;width:16px;}
+.admin-sol-menu-li{display:block;border-bottom:1px solid #414141;min-height:42px;line-height:42px;padding-left:15px;}
+.admin-sol-menu-li:hover{background-color:#313131;}
+.admin-sol-menu-li a{display:block;text-decoration:none;font-size:13px;color:#ccd1d9;}
+.admin-sol-menu-li a:hover{color:#656d78;}
+.admin-sol-menu-li a img{margin-right:10px;height:16px;width:16px;}
+
+/*içerik*/
+.admin-icerik{background-color:;}
+.admin-uyari{margin-bottom:15px !important;}
+.satir-admin-baslik{min-height:42px;line-height:42px;background-color:#3bafda;color:#f5f5f5;font-weight:300;}
+.satir-admin{padding-top:5px;padding-bottom:5px;border-bottom:1px solid #e5e5e5;font-size:13px;line-height:44px;}
+.satir-admin-bordersiz{padding-top:5px;padding-bottom:5px;font-size:13px;line-height:44px;}
+.satir-admin-liste-baslik{background-color:#464646;color:#f5f5f5;min-height:42px;line-height:42px;font-size:13px;}
+.satir-admin-liste-baslik-istatistik{background-color:#464646;color:#f5f5f5;min-height:42px;line-height:42px;font-size:13px;margin-top:30px;}
+.satir-admin-siralama{display:inline-block;}
+.satir-admin-siralama-numara{margin-right:5px;display:inline-block;}
+.satir-koyu{background-color:#ddeff4;}
+
+.admin-uye-detay{margin-right:5px;}
+.admin-login{margin-top:15px;}
